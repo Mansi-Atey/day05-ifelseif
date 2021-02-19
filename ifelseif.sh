@@ -1,36 +1,27 @@
 #!/bin/bash
-echo "Enter a number"
-read number
-number=$(($RANDOM%10))
- if [$number -eq 0]
-   then
-      echo "Zero"
-  elif [$number -eq 1]
-   then
-       echo "One"
-   elif [$number -eq 2]
-   then
-       echo "Two"
-     elif [$number -eq 3]
-   then
-       echo "Three"
-     elif [$number -eq 4]
-   then
-       echo "Four"
-      elif [$number -eq 5]
-   then
-       echo "Five"
-     elif [$number -eq 6]
-   then
-       echo "Six"
-      elif [$number -eq 7]
-   then
-       echo "Seven"
-  elif [$number -eq 8]
-   then
-       echo "Eight"
-  else [$number -eq 9]
-       echo "Nine"
+randomNumber=$(($RANDOM%7))
+echo $randomNumber
 
+ if [$randomNumber -eq 0]
+   then
+      echo "It is Sunday"
+ elif [$randomNumber -eq 1]
+    then
+       echo "It is Monday"
+  elif [$randomNumber -eq 2]
+    then
+       echo "It is Tuesday"
+  elif [$randomNumber -eq 3]
+    then
+       echo "It is Wednesday"
+  elif [$randomNumber -eq 4]
+    then
+       echo "It is Thursday"
+  elif [$randomNumber -eq 5]
+    then
+       echo "It is Friday"
+  else [$randomNumber -eq 6]
+
+       echo "It is Saturday"
 fi
 
